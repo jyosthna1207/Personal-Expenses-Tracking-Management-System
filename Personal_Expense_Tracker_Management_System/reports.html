@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spending reports | Jyosthna's Expense Tracker</title><link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head><body>
+<div class="app">
+<aside class="sidebar">
+  <a class="brand" href="index.html"><span class="brand-mark">J</span><span><strong>Jyosthna's Tracker</strong><small>PERSONAL FINANCE</small></span></a>
+  <div class="nav-label">Workspace</div>
+  <nav class="nav">
+    <a href="index.html" data-page="dashboard"><span class="ico">▦</span>Dashboard</a>
+    <a href="transactions.html" data-page="transactions"><span class="ico">↔</span>Transactions</a>
+    <a href="categories.html" data-page="categories"><span class="ico">▤</span>Categories</a>
+    <a href="budgets.html" data-page="budgets"><span class="ico">◷</span>Budgets</a>
+    <a href="reports.html" data-page="reports"><span class="ico">▥</span>Reports</a>
+  </nav>
+  <div class="side-bottom">Small steps today create stronger financial habits tomorrow.</div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="eyebrow">PERSONAL FINANCE OVERVIEW</div><h1 class="page-title">Spending reports</h1><div class="subtitle">Understand where your money goes each month.</div></div>
+<div class="user-chip"><span class="avatar" id="userInitial">J</span><span id="userName">My Account</span><button class="btn secondary small" id="logoutBtn">Logout</button></div></header>
+<img class="image-strip" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&q=85" alt="Analytics dashboard with charts on a monitor">
+
+<section class="panel"><div class="filter-row"><div class="field"><label>Month</label><select id="reportMonth"></select></div><div class="field"><label>Year</label><input id="reportYear" type="number" min="2020" max="2100"></div><button class="btn" id="loadReport">View report</button></div></section>
+<section class="stats"><article class="stat"><div class="stat-top"><span>Income</span><span class="stat-icon mint">↗</span></div><h3 id="reportIncome">₹0.00</h3></article><article class="stat"><div class="stat-top"><span>Expenses</span><span class="stat-icon peach">↘</span></div><h3 id="reportExpense">₹0.00</h3></article><article class="stat"><div class="stat-top"><span>Net savings</span><span class="stat-icon blue">◈</span></div><h3 id="reportSavings">₹0.00</h3></article></section>
+<section class="panel"><div class="section-head"><h2>Expenses by category</h2></div><div class="chart-box"><canvas id="categoryChart"></canvas></div></section>
+
+</main></div><script src="js/app.js"></script><script src="js/reports.js"></script></body></html>

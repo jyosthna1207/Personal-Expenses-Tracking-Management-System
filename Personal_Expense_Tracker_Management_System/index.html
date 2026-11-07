@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your money, in focus | Jyosthna's Expense Tracker</title><link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script></head><body>
+<div class="app">
+<aside class="sidebar">
+  <a class="brand" href="index.html"><span class="brand-mark">J</span><span><strong>Jyosthna's Tracker</strong><small>PERSONAL FINANCE</small></span></a>
+  <div class="nav-label">Workspace</div>
+  <nav class="nav">
+    <a href="index.html" data-page="dashboard"><span class="ico">▦</span>Dashboard</a>
+    <a href="transactions.html" data-page="transactions"><span class="ico">↔</span>Transactions</a>
+    <a href="categories.html" data-page="categories"><span class="ico">▤</span>Categories</a>
+    <a href="budgets.html" data-page="budgets"><span class="ico">◷</span>Budgets</a>
+    <a href="reports.html" data-page="reports"><span class="ico">▥</span>Reports</a>
+  </nav>
+  <div class="side-bottom">Small steps today create stronger financial habits tomorrow.</div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="eyebrow">PERSONAL FINANCE OVERVIEW</div><h1 class="page-title">Your money, in focus</h1><div class="subtitle">A clear picture of your income, spending and savings.</div></div>
+<div class="user-chip"><span class="avatar" id="userInitial">J</span><span id="userName">My Account</span><button class="btn secondary small" id="logoutBtn">Logout</button></div></header>
+<img class="image-strip" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1400&q=85" alt="Personal finance planning with notebook and calculator">
+
+<section class="hero"><div><div class="eyebrow">YOUR FINANCIAL SNAPSHOT</div><h2>Make every rupee count.</h2><p>Track your daily activity, understand your spending habits and build a budget that works for you.</p><a class="btn" href="transactions.html">＋ Add transaction</a></div><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=85" alt="Notebook, calculator and financial planning desk"></section>
+<section class="stats">
+ <article class="stat"><div class="stat-top"><span>Total income this month</span><span class="stat-icon mint">↗</span></div><h3 id="totalIncome">₹0.00</h3><small>Money received</small></article>
+ <article class="stat"><div class="stat-top"><span>Total expenses this month</span><span class="stat-icon peach">↘</span></div><h3 id="totalExpense">₹0.00</h3><small>Money spent</small></article>
+ <article class="stat"><div class="stat-top"><span>Remaining balance</span><span class="stat-icon blue">◈</span></div><h3 id="totalBalance">₹0.00</h3><small>Income minus expenses</small></article>
+</section>
+<div class="section-head"><h2>Recent transactions</h2><a class="btn secondary small" href="transactions.html">View all</a></div>
+<section class="panel"><div class="table-wrap"><table><thead><tr><th>Date</th><th>Description</th><th>Category</th><th>Type</th><th>Amount</th></tr></thead><tbody id="recentTransactions"><tr><td colspan="5" class="empty">Loading your transactions...</td></tr></tbody></table></div></section>
+
+</main></div><script src="js/app.js"></script><script src="js/dashboard.js"></script></body></html>

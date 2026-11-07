@@ -1,0 +1,33 @@
+Personal Expense Tracker Management System/
+├── index.html
+├── login.html
+├── register.html
+├── transactions.html
+├── categories.html
+├── budgets.html
+├── reports.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── app.js
+│   ├── auth.js
+│   ├── dashboard.js
+│   ├── transactions.js
+│   ├── categories.js
+│   ├── budgets.js
+│   └── reports.js
+├── images/                 (optional local images)
+├── database/
+│   └── database.sql
+└── backend/
+    ├── package.json
+    ├── server.js
+    ├── db.js
+    ├── middleware/
+    │   └── auth.js
+    └── routes/
+        ├── auth.js
+        ├── transactions.js
+        ├── categories.js
+        ├── budgets.js
+        └── reports.js
